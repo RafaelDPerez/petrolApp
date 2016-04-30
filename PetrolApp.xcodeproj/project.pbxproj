@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51E94D241CD56BBD00E6CA62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D231CD56BBD00E6CA62 /* main.m */; };
+		51E94D271CD56BBD00E6CA62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D261CD56BBD00E6CA62 /* AppDelegate.m */; };
+		51E94D2A1CD56BBD00E6CA62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D291CD56BBD00E6CA62 /* ViewController.m */; };
+		51E94D2D1CD56BBE00E6CA62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E94D2B1CD56BBE00E6CA62 /* Main.storyboard */; };
+		51E94D2F1CD56BBE00E6CA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E94D2E1CD56BBE00E6CA62 /* Assets.xcassets */; };
+		51E94D321CD56BBE00E6CA62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E94D301CD56BBE00E6CA62 /* LaunchScreen.storyboard */; };
+		51E94D3D1CD56BBE00E6CA62 /* PetrolAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D3C1CD56BBE00E6CA62 /* PetrolAppTests.m */; };
+		51E94D481CD56BBE00E6CA62 /* PetrolAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D471CD56BBE00E6CA62 /* PetrolAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51E94D391CD56BBE00E6CA62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51E94D171CD56BBD00E6CA62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51E94D1E1CD56BBD00E6CA62;
+			remoteInfo = PetrolApp;
+		};
+		51E94D441CD56BBE00E6CA62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51E94D171CD56BBD00E6CA62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51E94D1E1CD56BBD00E6CA62;
+			remoteInfo = PetrolApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51E94D1F1CD56BBD00E6CA62 /* PetrolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E94D231CD56BBD00E6CA62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		51E94D251CD56BBD00E6CA62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		51E94D261CD56BBD00E6CA62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		51E94D281CD56BBD00E6CA62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		51E94D291CD56BBD00E6CA62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		51E94D2C1CD56BBE00E6CA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51E94D2E1CD56BBE00E6CA62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51E94D311CD56BBE00E6CA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51E94D331CD56BBE00E6CA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51E94D381CD56BBE00E6CA62 /* PetrolAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetrolAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E94D3C1CD56BBE00E6CA62 /* PetrolAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetrolAppTests.m; sourceTree = "<group>"; };
+		51E94D3E1CD56BBE00E6CA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51E94D431CD56BBE00E6CA62 /* PetrolAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetrolAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E94D471CD56BBE00E6CA62 /* PetrolAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetrolAppUITests.m; sourceTree = "<group>"; };
+		51E94D491CD56BBE00E6CA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51E94D1C1CD56BBD00E6CA62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E94D351CD56BBE00E6CA62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E94D401CD56BBE00E6CA62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51E94D161CD56BBD00E6CA62 = {
+			isa = PBXGroup;
+			children = (
+				51E94D211CD56BBD00E6CA62 /* PetrolApp */,
+				51E94D3B1CD56BBE00E6CA62 /* PetrolAppTests */,
+				51E94D461CD56BBE00E6CA62 /* PetrolAppUITests */,
+				51E94D201CD56BBD00E6CA62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51E94D201CD56BBD00E6CA62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51E94D1F1CD56BBD00E6CA62 /* PetrolApp.app */,
+				51E94D381CD56BBE00E6CA62 /* PetrolAppTests.xctest */,
+				51E94D431CD56BBE00E6CA62 /* PetrolAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51E94D211CD56BBD00E6CA62 /* PetrolApp */ = {
+			isa = PBXGroup;
+			children = (
+				51E94D251CD56BBD00E6CA62 /* AppDelegate.h */,
+				51E94D261CD56BBD00E6CA62 /* AppDelegate.m */,
+				51E94D281CD56BBD00E6CA62 /* ViewController.h */,
+				51E94D291CD56BBD00E6CA62 /* ViewController.m */,
+				51E94D2B1CD56BBE00E6CA62 /* Main.storyboard */,
+				51E94D2E1CD56BBE00E6CA62 /* Assets.xcassets */,
+				51E94D301CD56BBE00E6CA62 /* LaunchScreen.storyboard */,
+				51E94D331CD56BBE00E6CA62 /* Info.plist */,
+				51E94D221CD56BBD00E6CA62 /* Supporting Files */,
+			);
+			path = PetrolApp;
+			sourceTree = "<group>";
+		};
+		51E94D221CD56BBD00E6CA62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51E94D231CD56BBD00E6CA62 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51E94D3B1CD56BBE00E6CA62 /* PetrolAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				51E94D3C1CD56BBE00E6CA62 /* PetrolAppTests.m */,
+				51E94D3E1CD56BBE00E6CA62 /* Info.plist */,
+			);
+			path = PetrolAppTests;
+			sourceTree = "<group>";
+		};
+		51E94D461CD56BBE00E6CA62 /* PetrolAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				51E94D471CD56BBE00E6CA62 /* PetrolAppUITests.m */,
+				51E94D491CD56BBE00E6CA62 /* Info.plist */,
+			);
+			path = PetrolAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51E94D1E1CD56BBD00E6CA62 /* PetrolApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E94D4C1CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolApp" */;
+			buildPhases = (
+				51E94D1B1CD56BBD00E6CA62 /* Sources */,
+				51E94D1C1CD56BBD00E6CA62 /* Frameworks */,
+				51E94D1D1CD56BBD00E6CA62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetrolApp;
+			productName = PetrolApp;
+			productReference = 51E94D1F1CD56BBD00E6CA62 /* PetrolApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		51E94D371CD56BBE00E6CA62 /* PetrolAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E94D4F1CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolAppTests" */;
+			buildPhases = (
+				51E94D341CD56BBE00E6CA62 /* Sources */,
+				51E94D351CD56BBE00E6CA62 /* Frameworks */,
+				51E94D361CD56BBE00E6CA62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51E94D3A1CD56BBE00E6CA62 /* PBXTargetDependency */,
+			);
+			name = PetrolAppTests;
+			productName = PetrolAppTests;
+			productReference = 51E94D381CD56BBE00E6CA62 /* PetrolAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		51E94D421CD56BBE00E6CA62 /* PetrolAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E94D521CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolAppUITests" */;
+			buildPhases = (
+				51E94D3F1CD56BBE00E6CA62 /* Sources */,
+				51E94D401CD56BBE00E6CA62 /* Frameworks */,
+				51E94D411CD56BBE00E6CA62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51E94D451CD56BBE00E6CA62 /* PBXTargetDependency */,
+			);
+			name = PetrolAppUITests;
+			productName = PetrolAppUITests;
+			productReference = 51E94D431CD56BBE00E6CA62 /* PetrolAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51E94D171CD56BBD00E6CA62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rafael Pérez";
+				TargetAttributes = {
+					51E94D1E1CD56BBD00E6CA62 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					51E94D371CD56BBE00E6CA62 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 51E94D1E1CD56BBD00E6CA62;
+					};
+					51E94D421CD56BBE00E6CA62 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 51E94D1E1CD56BBD00E6CA62;
+					};
+				};
+			};
+			buildConfigurationList = 51E94D1A1CD56BBD00E6CA62 /* Build configuration list for PBXProject "PetrolApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51E94D161CD56BBD00E6CA62;
+			productRefGroup = 51E94D201CD56BBD00E6CA62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51E94D1E1CD56BBD00E6CA62 /* PetrolApp */,
+				51E94D371CD56BBE00E6CA62 /* PetrolAppTests */,
+				51E94D421CD56BBE00E6CA62 /* PetrolAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51E94D1D1CD56BBD00E6CA62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E94D321CD56BBE00E6CA62 /* LaunchScreen.storyboard in Resources */,
+				51E94D2F1CD56BBE00E6CA62 /* Assets.xcassets in Resources */,
+				51E94D2D1CD56BBE00E6CA62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E94D361CD56BBE00E6CA62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E94D411CD56BBE00E6CA62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51E94D1B1CD56BBD00E6CA62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E94D2A1CD56BBD00E6CA62 /* ViewController.m in Sources */,
+				51E94D271CD56BBD00E6CA62 /* AppDelegate.m in Sources */,
+				51E94D241CD56BBD00E6CA62 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E94D341CD56BBE00E6CA62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E94D3D1CD56BBE00E6CA62 /* PetrolAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E94D3F1CD56BBE00E6CA62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E94D481CD56BBE00E6CA62 /* PetrolAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51E94D3A1CD56BBE00E6CA62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51E94D1E1CD56BBD00E6CA62 /* PetrolApp */;
+			targetProxy = 51E94D391CD56BBE00E6CA62 /* PBXContainerItemProxy */;
+		};
+		51E94D451CD56BBE00E6CA62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51E94D1E1CD56BBD00E6CA62 /* PetrolApp */;
+			targetProxy = 51E94D441CD56BBE00E6CA62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		51E94D2B1CD56BBE00E6CA62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51E94D2C1CD56BBE00E6CA62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51E94D301CD56BBE00E6CA62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51E94D311CD56BBE00E6CA62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51E94D4A1CD56BBE00E6CA62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		51E94D4B1CD56BBE00E6CA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51E94D4D1CD56BBE00E6CA62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PetrolApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.app.PetrolApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		51E94D4E1CD56BBE00E6CA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PetrolApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.app.PetrolApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		51E94D501CD56BBE00E6CA62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PetrolAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.app.PetrolAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetrolApp.app/PetrolApp";
+			};
+			name = Debug;
+		};
+		51E94D511CD56BBE00E6CA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PetrolAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.app.PetrolAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetrolApp.app/PetrolApp";
+			};
+			name = Release;
+		};
+		51E94D531CD56BBE00E6CA62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PetrolAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.app.PetrolAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PetrolApp;
+			};
+			name = Debug;
+		};
+		51E94D541CD56BBE00E6CA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PetrolAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.app.PetrolAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PetrolApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51E94D1A1CD56BBD00E6CA62 /* Build configuration list for PBXProject "PetrolApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E94D4A1CD56BBE00E6CA62 /* Debug */,
+				51E94D4B1CD56BBE00E6CA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E94D4C1CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E94D4D1CD56BBE00E6CA62 /* Debug */,
+				51E94D4E1CD56BBE00E6CA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		51E94D4F1CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E94D501CD56BBE00E6CA62 /* Debug */,
+				51E94D511CD56BBE00E6CA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		51E94D521CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E94D531CD56BBE00E6CA62 /* Debug */,
+				51E94D541CD56BBE00E6CA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51E94D171CD56BBD00E6CA62 /* Project object */;
+}
