@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511E99E71D03D08C0065AA38 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E99E61D03D08C0065AA38 /* testViewController.m */; };
+		519C88AF1D047636003FB50B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88AE1D047636003FB50B /* CoreLocation.framework */; };
+		519C88B11D04763C003FB50B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88B01D04763C003FB50B /* UIKit.framework */; };
+		519C88B31D047648003FB50B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88B21D047648003FB50B /* CoreGraphics.framework */; };
+		519C88B51D04764E003FB50B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88B41D04764E003FB50B /* Foundation.framework */; };
+		519C88B81D0477C5003FB50B /* LocationFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519C88B71D0477C5003FB50B /* LocationFinderViewController.m */; };
+		51A7AE681CD5853A008C99AA /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7AE671CD5853A008C99AA /* Station.m */; };
+		51A7AE6C1CD58726008C99AA /* StationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7AE6B1CD58726008C99AA /* StationCell.m */; };
+		51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C467671CF50ABF0072A9D4 /* IntroViewController.m */; };
+		51D57FB71CE16735004A46BA /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D57FB61CE16735004A46BA /* MainTableViewController.m */; };
 		51E94D241CD56BBD00E6CA62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D231CD56BBD00E6CA62 /* main.m */; };
 		51E94D271CD56BBD00E6CA62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D261CD56BBD00E6CA62 /* AppDelegate.m */; };
 		51E94D2A1CD56BBD00E6CA62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D291CD56BBD00E6CA62 /* ViewController.m */; };
@@ -35,6 +45,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		511E99E51D03D08C0065AA38 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		511E99E61D03D08C0065AA38 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		519C88AE1D047636003FB50B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		519C88B01D04763C003FB50B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		519C88B21D047648003FB50B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		519C88B41D04764E003FB50B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		519C88B61D0477C5003FB50B /* LocationFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationFinderViewController.h; sourceTree = "<group>"; };
+		519C88B71D0477C5003FB50B /* LocationFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationFinderViewController.m; sourceTree = "<group>"; };
+		51A7AE661CD5853A008C99AA /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		51A7AE671CD5853A008C99AA /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		51A7AE6A1CD58726008C99AA /* StationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationCell.h; sourceTree = "<group>"; };
+		51A7AE6B1CD58726008C99AA /* StationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationCell.m; sourceTree = "<group>"; };
+		51C467661CF50ABF0072A9D4 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		51C467671CF50ABF0072A9D4 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		51D57FB51CE16735004A46BA /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		51D57FB61CE16735004A46BA /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		51E94D1F1CD56BBD00E6CA62 /* PetrolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E94D231CD56BBD00E6CA62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51E94D251CD56BBD00E6CA62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				519C88B51D04764E003FB50B /* Foundation.framework in Frameworks */,
+				519C88B31D047648003FB50B /* CoreGraphics.framework in Frameworks */,
+				519C88B11D04763C003FB50B /* UIKit.framework in Frameworks */,
+				519C88AF1D047636003FB50B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +108,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		519C88AD1D047625003FB50B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				519C88B41D04764E003FB50B /* Foundation.framework */,
+				519C88B21D047648003FB50B /* CoreGraphics.framework */,
+				519C88B01D04763C003FB50B /* UIKit.framework */,
+				519C88AE1D047636003FB50B /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51A7AE641CD58514008C99AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				519C88B61D0477C5003FB50B /* LocationFinderViewController.h */,
+				519C88B71D0477C5003FB50B /* LocationFinderViewController.m */,
+				51E94D281CD56BBD00E6CA62 /* ViewController.h */,
+				51E94D291CD56BBD00E6CA62 /* ViewController.m */,
+				51D57FB51CE16735004A46BA /* MainTableViewController.h */,
+				51D57FB61CE16735004A46BA /* MainTableViewController.m */,
+				51C467661CF50ABF0072A9D4 /* IntroViewController.h */,
+				51C467671CF50ABF0072A9D4 /* IntroViewController.m */,
+				511E99E51D03D08C0065AA38 /* testViewController.h */,
+				511E99E61D03D08C0065AA38 /* testViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		51A7AE651CD5851A008C99AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51A7AE661CD5853A008C99AA /* Station.h */,
+				51A7AE671CD5853A008C99AA /* Station.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		51A7AE691CD5869E008C99AA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				51A7AE6A1CD58726008C99AA /* StationCell.h */,
+				51A7AE6B1CD58726008C99AA /* StationCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		51D57FB81CE1680C004A46BA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		51E94D161CD56BBD00E6CA62 = {
 			isa = PBXGroup;
 			children = (
+				519C88AD1D047625003FB50B /* Frameworks */,
 				51E94D211CD56BBD00E6CA62 /* PetrolApp */,
 				51E94D3B1CD56BBE00E6CA62 /* PetrolAppTests */,
 				51E94D461CD56BBE00E6CA62 /* PetrolAppUITests */,
@@ -101,10 +185,12 @@
 		51E94D211CD56BBD00E6CA62 /* PetrolApp */ = {
 			isa = PBXGroup;
 			children = (
+				51D57FB81CE1680C004A46BA /* Images */,
+				51A7AE691CD5869E008C99AA /* Cells */,
+				51A7AE651CD5851A008C99AA /* Model */,
+				51A7AE641CD58514008C99AA /* Controller */,
 				51E94D251CD56BBD00E6CA62 /* AppDelegate.h */,
 				51E94D261CD56BBD00E6CA62 /* AppDelegate.m */,
-				51E94D281CD56BBD00E6CA62 /* ViewController.h */,
-				51E94D291CD56BBD00E6CA62 /* ViewController.m */,
 				51E94D2B1CD56BBE00E6CA62 /* Main.storyboard */,
 				51E94D2E1CD56BBE00E6CA62 /* Assets.xcassets */,
 				51E94D301CD56BBE00E6CA62 /* LaunchScreen.storyboard */,
@@ -207,6 +293,7 @@
 				TargetAttributes = {
 					51E94D1E1CD56BBD00E6CA62 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9ZZEJK9DFN;
 					};
 					51E94D371CD56BBE00E6CA62 = {
 						CreatedOnToolsVersion = 7.3;
@@ -272,7 +359,13 @@
 			files = (
 				51E94D2A1CD56BBD00E6CA62 /* ViewController.m in Sources */,
 				51E94D271CD56BBD00E6CA62 /* AppDelegate.m in Sources */,
+				51D57FB71CE16735004A46BA /* MainTableViewController.m in Sources */,
+				51A7AE681CD5853A008C99AA /* Station.m in Sources */,
 				51E94D241CD56BBD00E6CA62 /* main.m in Sources */,
+				51A7AE6C1CD58726008C99AA /* StationCell.m in Sources */,
+				511E99E71D03D08C0065AA38 /* testViewController.m in Sources */,
+				519C88B81D0477C5003FB50B /* LocationFinderViewController.m in Sources */,
+				51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +506,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PetrolApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.app.PetrolApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.petrol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +520,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PetrolApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.app.PetrolApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maranta.petrol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +595,7 @@
 				51E94D4E1CD56BBE00E6CA62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51E94D4F1CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolAppTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +604,7 @@
 				51E94D511CD56BBE00E6CA62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51E94D521CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +613,7 @@
 				51E94D541CD56BBE00E6CA62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
