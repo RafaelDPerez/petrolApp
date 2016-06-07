@@ -10,6 +10,7 @@
 #import "Station.h"
 #import "StationCell.h"
 
+
 @interface ViewController ()
 
 @end
@@ -133,6 +134,33 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+   static NSString *identifier = @"MyLocation";
+    //MKAnnotationView *annotationView = (MKAnnotationView *) [_mapView ];
+    MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+    annotationView.annotation = annotation;
+    annotationView.enabled = YES;
+    annotationView.canShowCallout = YES;
+    annotationView.image = [UIImage imageNamed:@"NearMe"];
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        return annotationView;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    //MyLocation *location = (MyLocation*)view.annotation;
+    MKPointAnnotation *hola = [[MKPointAnnotation alloc] init];
+    hola = view.annotation;
+    MKPlacemark *placemark = [[MKPlacemark alloc]
+                              initWithCoordinate:hola.coordinate
+                              addressDictionary:nil];
+    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+    mapItem.name = @"prueba";
+    
+    
+    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+    [mapItem openInMapsWithLaunchOptions:launchOptions];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
