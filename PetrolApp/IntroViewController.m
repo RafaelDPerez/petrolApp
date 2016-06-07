@@ -8,6 +8,7 @@
 
 #import "IntroViewController.h"
 
+
 @interface IntroViewController ()
 {
     CLGeocoder *geocoder;
@@ -87,6 +88,25 @@
 -(IBAction)refresh:(id)sender{
 [locationManager startUpdatingLocation];
     
+}
+
+-(IBAction)findStations:(id)sender{
+
+    if([txtLocation.text isEqual:@""])
+    {
+        UIAlertController * alert=   [UIAlertController
+                                      alertControllerWithTitle:@"No location provided"
+                                      message:@"Please provide a ZIP code or press the location button."
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:ok];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else{
+      [self performSegueWithIdentifier:@"callStations" sender:nil];
+    }
+    
+
 }
 
 

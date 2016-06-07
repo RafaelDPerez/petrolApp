@@ -9,12 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
-
-@interface MainTableViewController : UITableViewController{
-    
-    IBOutlet UITableView *tableView;
-}
+#import "ASStarRatingView.h"
+@interface MainTableViewController : UITableViewController
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (strong,nonatomic) NSMutableArray *stationsArray;
+
 @end

@@ -13,6 +13,12 @@
 @property (strong,nonatomic) NSString *Name;
 @property (strong,nonatomic) NSString *Latitude;
 @property (strong,nonatomic) NSString *Longitude;
+@property (strong,nonatomic) NSString *waitTime;
+@property (strong,nonatomic) NSString *gasQuantity;
+@property (strong,nonatomic) NSString *Distance;
+@property (strong,nonatomic) NSString *Rating;
+
+
 
 
 -(Station *) InitWithDictionary: (NSDictionary*) Dict;

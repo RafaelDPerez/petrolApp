@@ -71,12 +71,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return [stationsArray count];
 }
 
@@ -89,11 +89,11 @@
     if (!cell) {
         cell = [[StationCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
     }
-    if(tableView == self.searchDisplayController.searchResultsTableView)
-    {
-        cell= [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-        //station = [filteredguestArray objectAtIndex:indexPath.row];
-    }
+//    if(tableView == self.searchDisplayController.searchResultsTableView)
+//    {
+//        cell= [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+//        //station = [filteredguestArray objectAtIndex:indexPath.row];
+//    }
     else{
         cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier forIndexPath:indexPath];
         station = [stationsArray objectAtIndex:indexPath.row];
@@ -105,6 +105,9 @@
     
     cell.stationName.text = station.Name;
     cell.stationAddress.text = station.Name;
+    cell.staticStarRatingView.canEdit = NO;
+    cell.staticStarRatingView.maxRating = 5;
+    cell.staticStarRatingView.rating = 1.5;
     
     return cell;
 

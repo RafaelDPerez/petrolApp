@@ -18,6 +18,7 @@
 @property (strong, nonatomic)IBOutlet UILabel *lblselectedFuel;
 @property (strong, nonatomic)IBOutlet UITextField *txtLocation;
 @property (nonatomic, retain) CLLocationManager *locationManager;
+-(IBAction)findStations:(id)sender;
 
 
 @end

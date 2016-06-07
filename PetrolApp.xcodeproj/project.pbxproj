@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		511E99E71D03D08C0065AA38 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E99E61D03D08C0065AA38 /* testViewController.m */; };
+		519B98461D0785FA00DE4DD9 /* ASStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */; };
+		519B984A1D0787D700DE4DD9 /* stars in Resources */ = {isa = PBXBuildFile; fileRef = 519B98491D0787D700DE4DD9 /* stars */; };
+		519B984D1D07926300DE4DD9 /* StationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B984C1D07926300DE4DD9 /* StationViewController.m */; };
 		519C88AF1D047636003FB50B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88AE1D047636003FB50B /* CoreLocation.framework */; };
 		519C88B11D04763C003FB50B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88B01D04763C003FB50B /* UIKit.framework */; };
 		519C88B31D047648003FB50B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88B21D047648003FB50B /* CoreGraphics.framework */; };
 		519C88B51D04764E003FB50B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88B41D04764E003FB50B /* Foundation.framework */; };
-		519C88B81D0477C5003FB50B /* LocationFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519C88B71D0477C5003FB50B /* LocationFinderViewController.m */; };
 		51A7AE681CD5853A008C99AA /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7AE671CD5853A008C99AA /* Station.m */; };
 		51A7AE6C1CD58726008C99AA /* StationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7AE6B1CD58726008C99AA /* StationCell.m */; };
 		51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C467671CF50ABF0072A9D4 /* IntroViewController.m */; };
@@ -47,12 +49,15 @@
 /* Begin PBXFileReference section */
 		511E99E51D03D08C0065AA38 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
 		511E99E61D03D08C0065AA38 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		519B98431D0785FA00DE4DD9 /* ASStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStarRatingView.h; sourceTree = "<group>"; };
+		519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStarRatingView.m; sourceTree = "<group>"; };
+		519B98491D0787D700DE4DD9 /* stars */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stars; sourceTree = "<group>"; };
+		519B984B1D07926300DE4DD9 /* StationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationViewController.h; sourceTree = "<group>"; };
+		519B984C1D07926300DE4DD9 /* StationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationViewController.m; sourceTree = "<group>"; };
 		519C88AE1D047636003FB50B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		519C88B01D04763C003FB50B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		519C88B21D047648003FB50B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		519C88B41D04764E003FB50B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		519C88B61D0477C5003FB50B /* LocationFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationFinderViewController.h; sourceTree = "<group>"; };
-		519C88B71D0477C5003FB50B /* LocationFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationFinderViewController.m; sourceTree = "<group>"; };
 		51A7AE661CD5853A008C99AA /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
 		51A7AE671CD5853A008C99AA /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
 		51A7AE6A1CD58726008C99AA /* StationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationCell.h; sourceTree = "<group>"; };
@@ -108,6 +113,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		519B98421D0785E000DE4DD9 /* ASStarRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				519B98431D0785FA00DE4DD9 /* ASStarRatingView.h */,
+				519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */,
+				519B98491D0787D700DE4DD9 /* stars */,
+			);
+			name = ASStarRatingView;
+			sourceTree = "<group>";
+		};
 		519C88AD1D047625003FB50B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,8 +137,6 @@
 		51A7AE641CD58514008C99AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				519C88B61D0477C5003FB50B /* LocationFinderViewController.h */,
-				519C88B71D0477C5003FB50B /* LocationFinderViewController.m */,
 				51E94D281CD56BBD00E6CA62 /* ViewController.h */,
 				51E94D291CD56BBD00E6CA62 /* ViewController.m */,
 				51D57FB51CE16735004A46BA /* MainTableViewController.h */,
@@ -132,6 +145,8 @@
 				51C467671CF50ABF0072A9D4 /* IntroViewController.m */,
 				511E99E51D03D08C0065AA38 /* testViewController.h */,
 				511E99E61D03D08C0065AA38 /* testViewController.m */,
+				519B984B1D07926300DE4DD9 /* StationViewController.h */,
+				519B984C1D07926300DE4DD9 /* StationViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -185,6 +200,7 @@
 		51E94D211CD56BBD00E6CA62 /* PetrolApp */ = {
 			isa = PBXGroup;
 			children = (
+				519B98421D0785E000DE4DD9 /* ASStarRatingView */,
 				51D57FB81CE1680C004A46BA /* Images */,
 				51A7AE691CD5869E008C99AA /* Cells */,
 				51A7AE651CD5851A008C99AA /* Model */,
@@ -332,6 +348,7 @@
 			files = (
 				51E94D321CD56BBE00E6CA62 /* LaunchScreen.storyboard in Resources */,
 				51E94D2F1CD56BBE00E6CA62 /* Assets.xcassets in Resources */,
+				519B984A1D0787D700DE4DD9 /* stars in Resources */,
 				51E94D2D1CD56BBE00E6CA62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,8 +381,9 @@
 				51E94D241CD56BBD00E6CA62 /* main.m in Sources */,
 				51A7AE6C1CD58726008C99AA /* StationCell.m in Sources */,
 				511E99E71D03D08C0065AA38 /* testViewController.m in Sources */,
-				519C88B81D0477C5003FB50B /* LocationFinderViewController.m in Sources */,
+				519B984D1D07926300DE4DD9 /* StationViewController.m in Sources */,
 				51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */,
+				519B98461D0785FA00DE4DD9 /* ASStarRatingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

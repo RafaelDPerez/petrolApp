@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASStarRatingView.h"
 
 @interface StationCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *stationName;
 @property (strong, nonatomic) IBOutlet UILabel *stationAddress;
+@property (retain, nonatomic) IBOutlet ASStarRatingView *staticStarRatingView;
 
 @end

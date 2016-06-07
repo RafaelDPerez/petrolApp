@@ -10,10 +10,7 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController <MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource>{
-
-IBOutlet UITableView *tableView;
-}
+@interface ViewController : UIViewController <MKMapViewDelegate>
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (strong,nonatomic) NSMutableArray *stationsArray;

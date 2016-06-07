@@ -21,42 +21,42 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    stationsArray = [[NSMutableArray alloc] init];
-    Station *station1 = [[Station alloc]init];
-    station1.Name = @"AP Filling Station";
-    station1.Longitude = @"6.469438";
-    station1.Latitude = @"3.578921";
-    Station *station2 = [[Station alloc]init];
-    station2.Name = @"AP Filling Station";
-    station2.Longitude = @"6.469438";
-    station2.Latitude = @"3.578921";
-    Station *station3 = [[Station alloc]init];
-    station3.Name = @"AP Filling Station";
-    station3.Longitude = @"6.469438";
-    station3.Latitude = @"3.578921";
-    Station *station4 = [[Station alloc]init];
-    station4.Name = @"Mobil";
-    station4.Longitude = @"6.469438";
-    station4.Latitude = @"3.578921";
-    Station *station5 = [[Station alloc]init];
-    station5.Name = @"AP Filling Station";
-    station5.Longitude = @"6.469438";
-    station5.Latitude = @"3.578921";
-    Station *station6 = [[Station alloc]init];
-    station6.Name = @"Mrs Filling Station";
-    station6.Longitude = @"6.469438";
-    station6.Latitude = @"3.578921";
-    Station *station7 = [[Station alloc]init];
-    station7.Name = @"AP Filling Station";
-    station7.Longitude = @"6.469438";
-    station7.Latitude = @"3.578921";
-    [stationsArray addObject:station1];
-    [stationsArray addObject:station2];
-    [stationsArray addObject:station3];
-    [stationsArray addObject:station4];
-    [stationsArray addObject:station5];
-    [stationsArray addObject:station6];
-    [stationsArray addObject:station7];
+//    stationsArray = [[NSMutableArray alloc] init];
+//    Station *station1 = [[Station alloc]init];
+//    station1.Name = @"AP Filling Station";
+//    station1.Longitude = @"6.469438";
+//    station1.Latitude = @"3.578921";
+//    Station *station2 = [[Station alloc]init];
+//    station2.Name = @"AP Filling Station";
+//    station2.Longitude = @"6.469438";
+//    station2.Latitude = @"3.578921";
+//    Station *station3 = [[Station alloc]init];
+//    station3.Name = @"AP Filling Station";
+//    station3.Longitude = @"6.469438";
+//    station3.Latitude = @"3.578921";
+//    Station *station4 = [[Station alloc]init];
+//    station4.Name = @"Mobil";
+//    station4.Longitude = @"6.469438";
+//    station4.Latitude = @"3.578921";
+//    Station *station5 = [[Station alloc]init];
+//    station5.Name = @"AP Filling Station";
+//    station5.Longitude = @"6.469438";
+//    station5.Latitude = @"3.578921";
+//    Station *station6 = [[Station alloc]init];
+//    station6.Name = @"Mrs Filling Station";
+//    station6.Longitude = @"6.469438";
+//    station6.Latitude = @"3.578921";
+//    Station *station7 = [[Station alloc]init];
+//    station7.Name = @"AP Filling Station";
+//    station7.Longitude = @"6.469438";
+//    station7.Latitude = @"3.578921";
+//    [stationsArray addObject:station1];
+//    [stationsArray addObject:station2];
+//    [stationsArray addObject:station3];
+//    [stationsArray addObject:station4];
+//    [stationsArray addObject:station5];
+//    [stationsArray addObject:station6];
+//    [stationsArray addObject:station7];
     
     
     CLLocationCoordinate2D location;
@@ -143,7 +143,7 @@
     annotationView.annotation = annotation;
     annotationView.enabled = YES;
     annotationView.canShowCallout = YES;
-    annotationView.image = [UIImage imageNamed:@"NearMe"];
+    annotationView.image = [UIImage imageNamed:@"Gas Station Filled-50"];
     annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         return annotationView;
 }
@@ -156,44 +156,11 @@
                               initWithCoordinate:hola.coordinate
                               addressDictionary:nil];
     MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
-    mapItem.name = @"prueba";
+    mapItem.name = hola.title;
     
     
     NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
     [mapItem openInMapsWithLaunchOptions:launchOptions];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return [stationsArray count];
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *MyIdentifier = @"StationCell";
-//    StationCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    Station *station;
-    if (!cell) {
-        cell = [[StationCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
-    }
-    if(tableView == self.searchDisplayController.searchResultsTableView)
-    {
-        cell= [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-        //station = [filteredguestArray objectAtIndex:indexPath.row];
-    }
-    else{
-        cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier forIndexPath:indexPath];
-        station = [stationsArray objectAtIndex:indexPath.row];
-        
-    }
-    
-//    cell.stationName.text = station.Name;
-//    cell.stationAddress.text = station.Name;
-
-    cell.textLabel.text = station.Name;
-
-    return cell;
 }
 
 
