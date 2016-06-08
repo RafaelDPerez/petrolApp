@@ -11,10 +11,10 @@
         <scene sceneID="OSH-cj-27W">
             <objects>
                 <tabBarController id="RkO-Uk-xP2" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="iOr-Dv-aPm">
+                    <tabBar key="tabBar" alpha="0.25" contentMode="scaleToFill" id="iOr-Dv-aPm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.17328238330000001" green="1" blue="0.14755121330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="y60-TY-pEI" kind="relationship" relationship="viewControllers" id="gay-sD-IUs"/>
@@ -148,6 +148,7 @@
                     <tabBarItem key="tabBarItem" title="Stations" image="Gas Station-50" id="ECd-ZI-3f6"/>
                     <navigationItem key="navigationItem" title="Petrol App" id="MkY-dV-7Jt"/>
                     <connections>
+                        <outlet property="sgmGasType" destination="Zu7-aD-Epx" id="A7m-nv-bue"/>
                         <outlet property="txtLocation" destination="FFF-xF-LKL" id="n3t-zW-MKR"/>
                         <segue destination="Sc5-VF-UVv" kind="push" identifier="callStations" id="5ax-yr-Ljs"/>
                     </connections>
@@ -277,7 +278,7 @@
                                     <outlet property="staticStarRatingView" destination="QQv-dz-L1g" id="w22-ra-6ml"/>
                                     <outlet property="stationName" destination="9UW-g5-VLN" id="X51-I0-tC0"/>
                                     <outlet property="waitTime" destination="AQC-c2-saC" id="Lhb-dy-GvL"/>
-                                    <segue destination="mu7-t4-HjR" kind="push" id="RUy-Uf-InL"/>
+                                    <segue destination="mu7-t4-HjR" kind="push" identifier="ViewStation" id="RUy-Uf-InL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -334,13 +335,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gas Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCR-91-kcI">
                                 <rect key="frame" x="20" y="308" width="119" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZx-yu-pqy">
                                 <rect key="frame" x="20" y="346" width="119" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-h8-Q9P">
@@ -349,7 +350,7 @@
                                     <constraint firstAttribute="height" constant="21" id="Ej0-ld-PvG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoZ-gP-qX7">
@@ -358,7 +359,7 @@
                                     <constraint firstAttribute="height" constant="39" id="UCk-qw-kOM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-wh-fn3">
@@ -406,6 +407,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="sGY-bw-B35"/>
                     <connections>
+                        <outlet property="lblStationName" destination="LoZ-gP-qX7" id="DFz-R4-kDA"/>
+                        <outlet property="sldGasQuantity" destination="xsF-zE-O3f" id="UrY-hy-pIa"/>
+                        <outlet property="sldWaitTime" destination="vbs-6y-Uar" id="sx4-dC-TpS"/>
                         <outlet property="starsRating" destination="dYP-6n-vur" id="qsu-2S-r58"/>
                     </connections>
                 </viewController>
@@ -418,4 +422,5 @@
         <image name="Gas Station-50" width="25" height="25"/>
         <image name="Map Marker-50" width="25" height="25"/>
     </resources>
+    <color key="tintColor" red="0.17328238330000001" green="1" blue="0.14755121330000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>

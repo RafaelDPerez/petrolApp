@@ -17,10 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"Texaco Luperon";
+    self.title = self.Station.Name;
+    
     _starsRating.canEdit = YES;
     _starsRating.maxRating = 5;
-    _starsRating.rating = 1.5;
+    _starsRating.rating = [self.Station.Rating floatValue];
+    _lblStationName.text = self.Station.Name;
+    _sldWaitTime.maximumValue = 1;
+    _sldGasQuantity.maximumValue = 1;
+    [_sldGasQuantity setValue:[self.Station.gasQuantity floatValue]];
+    [_sldWaitTime setValue:[self.Station.waitTime floatValue]];
 }
 
 - (void)didReceiveMemoryWarning {

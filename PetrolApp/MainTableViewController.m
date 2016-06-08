@@ -9,6 +9,7 @@
 #import "MainTableViewController.h"
 #import "Station.h"
 #import "StationCell.h"
+#import "StationViewController.h"
 
 @interface MainTableViewController ()
 
@@ -31,24 +32,24 @@
     station2.Name = @"AP Filling Station";
     station2.Longitude = @"6.469438";
     station2.Latitude = @"3.578921";
-    station2.waitTime = @"0.6";
-    station2.gasQuantity = @"0.9";
+    station2.waitTime = @"1.0";
+    station2.gasQuantity = @"0.5";
     station2.Rating = @"1";
     
     Station *station3 = [[Station alloc]init];
     station3.Name = @"AP Filling Station";
     station3.Longitude = @"6.469438";
     station3.Latitude = @"3.578921";
-    station3.waitTime = @"0.6";
-    station3.gasQuantity = @"0.9";
+    station3.waitTime = @"0.2";
+    station3.gasQuantity = @"0.75";
     station3.Rating = @"3";
     
     Station *station4 = [[Station alloc]init];
     station4.Name = @"Mobil";
     station4.Longitude = @"6.469438";
     station4.Latitude = @"3.578921";
-    station4.waitTime = @"0.6";
-    station4.gasQuantity = @"0.9";
+    station4.waitTime = @"0.0";
+    station4.gasQuantity = @"1.0";
     station4.Rating = @"5";
     
     Station *station5 = [[Station alloc]init];
@@ -141,6 +142,17 @@
     
     return cell;
 
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"ViewStation"]) {
+            NSIndexPath *indexPaths = [self.tableView indexPathForSelectedRow];
+            StationViewController *stationViewController = [segue destinationViewController];
+            Station *selectedStation = [stationsArray objectAtIndex:indexPaths.row];
+            stationViewController.Station = selectedStation;
+            [self.tableView deselectRowAtIndexPath:indexPaths animated:NO];
+    }
 }
 
 

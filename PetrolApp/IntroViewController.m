@@ -100,10 +100,52 @@
                                       preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alert addAction:ok];
-        [self presentViewController:alert animated:YES completion:nil];
+       // [self presentViewController:alert animated:YES completion:nil];
+       [self performSegueWithIdentifier:@"callStations" sender:nil];
     }
     else{
-      [self performSegueWithIdentifier:@"callStations" sender:nil];
+        if (_sgmGasType.selectedSegmentIndex == 0) {
+            UIAlertController * alert=   [UIAlertController
+                                          alertControllerWithTitle:@"Test"
+                                          message:@"Petrol"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ok];
+           // [self presentViewController:alert animated:YES completion:nil];
+           [self performSegueWithIdentifier:@"callStations" sender:nil];
+        }
+        if(_sgmGasType.selectedSegmentIndex == 1){
+            UIAlertController * alert=   [UIAlertController
+                                          alertControllerWithTitle:@"Test"
+                                          message:@"Unleaded"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ok];
+           // [self presentViewController:alert animated:YES completion:nil];
+           [self performSegueWithIdentifier:@"callStations" sender:nil];
+        }
+        if(_sgmGasType.selectedSegmentIndex == 2){
+            UIAlertController * alert=   [UIAlertController
+                                          alertControllerWithTitle:@"Test"
+                                          message:@"Gas"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ok];
+           // [self presentViewController:alert animated:YES completion:nil];
+           [self performSegueWithIdentifier:@"callStations" sender:nil];
+        }
+        if(_sgmGasType.selectedSegmentIndex == 3){
+            UIAlertController * alert=   [UIAlertController
+                                          alertControllerWithTitle:@"Test"
+                                          message:@"Diesel"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ok];
+          //  [self presentViewController:alert animated:YES completion:nil];
+           [self performSegueWithIdentifier:@"callStations" sender:nil];
+        }
+       
+   
     }
     
 

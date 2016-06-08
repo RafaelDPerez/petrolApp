@@ -18,6 +18,7 @@
 @property (strong, nonatomic)IBOutlet UILabel *lblselectedFuel;
 @property (strong, nonatomic)IBOutlet UITextField *txtLocation;
 @property (nonatomic, retain) CLLocationManager *locationManager;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *sgmGasType;
 -(IBAction)findStations:(id)sender;
 
 
