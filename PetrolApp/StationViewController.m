@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"Texaco Luperon";
+    _starsRating.canEdit = YES;
+    _starsRating.maxRating = 5;
+    _starsRating.rating = 1.5;
 }
 
 - (void)didReceiveMemoryWarning {

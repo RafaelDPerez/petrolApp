@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASStarRatingView.h"
 
 @interface StationViewController : UIViewController
-
+@property(strong,nonatomic) IBOutlet ASStarRatingView *starsRating;
 @end

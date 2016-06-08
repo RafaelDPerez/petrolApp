@@ -23,30 +23,58 @@
     station1.Name = @"AP Filling Station";
     station1.Longitude = @"6.469438";
     station1.Latitude = @"3.578921";
+    station1.waitTime = @"0.6";
+    station1.gasQuantity = @"0.9";
+    station1.Rating = @"4.5";
+    
     Station *station2 = [[Station alloc]init];
     station2.Name = @"AP Filling Station";
     station2.Longitude = @"6.469438";
     station2.Latitude = @"3.578921";
+    station2.waitTime = @"0.6";
+    station2.gasQuantity = @"0.9";
+    station2.Rating = @"1";
+    
     Station *station3 = [[Station alloc]init];
     station3.Name = @"AP Filling Station";
     station3.Longitude = @"6.469438";
     station3.Latitude = @"3.578921";
+    station3.waitTime = @"0.6";
+    station3.gasQuantity = @"0.9";
+    station3.Rating = @"3";
+    
     Station *station4 = [[Station alloc]init];
     station4.Name = @"Mobil";
     station4.Longitude = @"6.469438";
     station4.Latitude = @"3.578921";
+    station4.waitTime = @"0.6";
+    station4.gasQuantity = @"0.9";
+    station4.Rating = @"5";
+    
     Station *station5 = [[Station alloc]init];
     station5.Name = @"AP Filling Station";
     station5.Longitude = @"6.469438";
     station5.Latitude = @"3.578921";
+    station5.waitTime = @"0.6";
+    station5.gasQuantity = @"0.9";
+    station5.Rating = @"0";
+    
     Station *station6 = [[Station alloc]init];
     station6.Name = @"Mrs Filling Station";
     station6.Longitude = @"6.469438";
     station6.Latitude = @"3.578921";
+    station6.waitTime = @"0.6";
+    station6.gasQuantity = @"0.9";
+    station6.Rating = @"4.5";
+    
     Station *station7 = [[Station alloc]init];
     station7.Name = @"AP Filling Station";
     station7.Longitude = @"6.469438";
     station7.Latitude = @"3.578921";
+    station7.waitTime = @"0.6";
+    station7.gasQuantity = @"0.9";
+    station7.Rating = @"1";
+    
     [stationsArray addObject:station1];
     [stationsArray addObject:station2];
     [stationsArray addObject:station3];
@@ -105,9 +133,11 @@
     
     cell.stationName.text = station.Name;
     cell.stationAddress.text = station.Name;
+    cell.gasQuantity.progress = [station.gasQuantity floatValue];
+    cell.waitTime.progress = [station.waitTime floatValue];
     cell.staticStarRatingView.canEdit = NO;
     cell.staticStarRatingView.maxRating = 5;
-    cell.staticStarRatingView.rating = 1.5;
+    cell.staticStarRatingView.rating = [station.Rating floatValue];
     
     return cell;
 
