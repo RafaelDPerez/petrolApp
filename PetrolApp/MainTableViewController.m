@@ -149,8 +149,8 @@
     if ([segue.identifier isEqualToString:@"ViewStation"]) {
             NSIndexPath *indexPaths = [self.tableView indexPathForSelectedRow];
             StationViewController *stationViewController = [segue destinationViewController];
-            Station *selectedStation = [stationsArray objectAtIndex:indexPaths.row];
-            stationViewController.Station = selectedStation;
+            _selectedStation = [stationsArray objectAtIndex:indexPaths.row];
+            stationViewController.Station = _selectedStation;
             [self.tableView deselectRowAtIndexPath:indexPaths animated:NO];
     }
 }

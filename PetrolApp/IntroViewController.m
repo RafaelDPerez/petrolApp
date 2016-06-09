@@ -66,7 +66,13 @@
         
         if (error == nil && [placemarks count] > 0) {
             placemark = [placemarks lastObject];
-            txtLocation.text = placemark.postalCode;
+            NSLog(@"%@",placemark.postalCode);
+            if (placemark.postalCode == NULL) {
+               txtLocation.text = placemark.country;
+                
+            }
+            else
+                txtLocation.text = placemark.postalCode;
    
             
         } else {
@@ -84,6 +90,12 @@
     NSLog(@"Cannot find the location.");
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
 
 -(IBAction)refresh:(id)sender{
 [locationManager startUpdatingLocation];
@@ -100,8 +112,8 @@
                                       preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alert addAction:ok];
-       // [self presentViewController:alert animated:YES completion:nil];
-       [self performSegueWithIdentifier:@"callStations" sender:nil];
+        [self presentViewController:alert animated:YES completion:nil];
+       //[self performSegueWithIdentifier:@"callStations" sender:nil];
     }
     else{
         if (_sgmGasType.selectedSegmentIndex == 0) {

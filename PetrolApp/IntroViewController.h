@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface IntroViewController : UIViewController<CLLocationManagerDelegate>{
+@interface IntroViewController : UIViewController<CLLocationManagerDelegate, UITextFieldDelegate>{
 
     NSArray *fuelCollection;
     

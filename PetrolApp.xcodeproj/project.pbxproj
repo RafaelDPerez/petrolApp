@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		511E99E71D03D08C0065AA38 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E99E61D03D08C0065AA38 /* testViewController.m */; };
 		519B98461D0785FA00DE4DD9 /* ASStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */; };
 		519B984A1D0787D700DE4DD9 /* stars in Resources */ = {isa = PBXBuildFile; fileRef = 519B98491D0787D700DE4DD9 /* stars */; };
 		519B984D1D07926300DE4DD9 /* StationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B984C1D07926300DE4DD9 /* StationViewController.m */; };
@@ -17,6 +16,7 @@
 		519C88B51D04764E003FB50B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519C88B41D04764E003FB50B /* Foundation.framework */; };
 		51A7AE681CD5853A008C99AA /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7AE671CD5853A008C99AA /* Station.m */; };
 		51A7AE6C1CD58726008C99AA /* StationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7AE6B1CD58726008C99AA /* StationCell.m */; };
+		51AB69FC1D0915F7004262B1 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AB69FB1D0915F7004262B1 /* TabBarViewController.m */; };
 		51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C467671CF50ABF0072A9D4 /* IntroViewController.m */; };
 		51D57FB71CE16735004A46BA /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D57FB61CE16735004A46BA /* MainTableViewController.m */; };
 		51E94D241CD56BBD00E6CA62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D231CD56BBD00E6CA62 /* main.m */; };
@@ -47,8 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		511E99E51D03D08C0065AA38 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
-		511E99E61D03D08C0065AA38 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		519B98431D0785FA00DE4DD9 /* ASStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStarRatingView.h; sourceTree = "<group>"; };
 		519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStarRatingView.m; sourceTree = "<group>"; };
 		519B98491D0787D700DE4DD9 /* stars */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stars; sourceTree = "<group>"; };
@@ -62,6 +60,8 @@
 		51A7AE671CD5853A008C99AA /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
 		51A7AE6A1CD58726008C99AA /* StationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationCell.h; sourceTree = "<group>"; };
 		51A7AE6B1CD58726008C99AA /* StationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationCell.m; sourceTree = "<group>"; };
+		51AB69FA1D0915F7004262B1 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		51AB69FB1D0915F7004262B1 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		51C467661CF50ABF0072A9D4 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
 		51C467671CF50ABF0072A9D4 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
 		51D57FB51CE16735004A46BA /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
@@ -143,10 +143,10 @@
 				51D57FB61CE16735004A46BA /* MainTableViewController.m */,
 				51C467661CF50ABF0072A9D4 /* IntroViewController.h */,
 				51C467671CF50ABF0072A9D4 /* IntroViewController.m */,
-				511E99E51D03D08C0065AA38 /* testViewController.h */,
-				511E99E61D03D08C0065AA38 /* testViewController.m */,
 				519B984B1D07926300DE4DD9 /* StationViewController.h */,
 				519B984C1D07926300DE4DD9 /* StationViewController.m */,
+				51AB69FA1D0915F7004262B1 /* TabBarViewController.h */,
+				51AB69FB1D0915F7004262B1 /* TabBarViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				51A7AE681CD5853A008C99AA /* Station.m in Sources */,
 				51E94D241CD56BBD00E6CA62 /* main.m in Sources */,
 				51A7AE6C1CD58726008C99AA /* StationCell.m in Sources */,
-				511E99E71D03D08C0065AA38 /* testViewController.m in Sources */,
+				51AB69FC1D0915F7004262B1 /* TabBarViewController.m in Sources */,
 				519B984D1D07926300DE4DD9 /* StationViewController.m in Sources */,
 				51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */,
 				519B98461D0785FA00DE4DD9 /* ASStarRatingView.m in Sources */,
