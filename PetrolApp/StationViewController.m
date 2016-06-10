@@ -78,7 +78,7 @@
     annotationView.annotation = annotation;
     annotationView.enabled = YES;
     annotationView.canShowCallout = YES;
-    annotationView.image = [UIImage imageNamed:@"Gas Station Filled-50"];
+    annotationView.image = [UIImage imageNamed:@"Gas Station Filled-50 (1)"];
     annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     return annotationView;
 }
