@@ -38,7 +38,7 @@
     }
     
     UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(100.0, 100.0, 25.0, 25.0)];
-    [imageview setImage:[UIImage imageNamed:@"NearMe"]];
+    [imageview setImage:[UIImage imageNamed:@"Near Me-50"]];
     [imageview setUserInteractionEnabled:YES];
     
     UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(refresh:)];
