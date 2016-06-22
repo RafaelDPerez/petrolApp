@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309BA168690E65367D948C33 /* libPods-PetrolAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C39F4498746E9B117DF68277 /* libPods-PetrolAppTests.a */; };
+		4DE95F077A4D9496FC0B9A6C /* libPods-PetrolApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A3B8AC1FC566936658A62F /* libPods-PetrolApp.a */; };
 		518C00E51D0A6E590079B062 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518C00E41D0A6E590079B062 /* Image.xcassets */; };
 		519B98461D0785FA00DE4DD9 /* ASStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */; };
 		519B984D1D07926300DE4DD9 /* StationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B984C1D07926300DE4DD9 /* StationViewController.m */; };
@@ -19,6 +21,7 @@
 		51AB69FC1D0915F7004262B1 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AB69FB1D0915F7004262B1 /* TabBarViewController.m */; };
 		51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C467671CF50ABF0072A9D4 /* IntroViewController.m */; };
 		51D57FB71CE16735004A46BA /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D57FB61CE16735004A46BA /* MainTableViewController.m */; };
+		51D5F9401D1A0FD400153A46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D5F93F1D1A0FD400153A46 /* GoogleService-Info.plist */; };
 		51E94D241CD56BBD00E6CA62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D231CD56BBD00E6CA62 /* main.m */; };
 		51E94D271CD56BBD00E6CA62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D261CD56BBD00E6CA62 /* AppDelegate.m */; };
 		51E94D2A1CD56BBD00E6CA62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D291CD56BBD00E6CA62 /* ViewController.m */; };
@@ -26,6 +29,7 @@
 		51E94D321CD56BBE00E6CA62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E94D301CD56BBE00E6CA62 /* LaunchScreen.storyboard */; };
 		51E94D3D1CD56BBE00E6CA62 /* PetrolAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D3C1CD56BBE00E6CA62 /* PetrolAppTests.m */; };
 		51E94D481CD56BBE00E6CA62 /* PetrolAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E94D471CD56BBE00E6CA62 /* PetrolAppUITests.m */; };
+		5C7FB94F9FD4B0E2A4081A76 /* libPods-PetrolAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D253F73BB41AE3E78741B8 /* libPods-PetrolAppUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DA2023C2ACBE4DE5450D836 /* Pods-PetrolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrolApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetrolApp/Pods-PetrolApp.release.xcconfig"; sourceTree = "<group>"; };
 		518C00E41D0A6E590079B062 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		519B98431D0785FA00DE4DD9 /* ASStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStarRatingView.h; sourceTree = "<group>"; };
 		519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStarRatingView.m; sourceTree = "<group>"; };
@@ -65,6 +70,7 @@
 		51C467671CF50ABF0072A9D4 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
 		51D57FB51CE16735004A46BA /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		51D57FB61CE16735004A46BA /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		51D5F93F1D1A0FD400153A46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		51E94D1F1CD56BBD00E6CA62 /* PetrolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E94D231CD56BBD00E6CA62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51E94D251CD56BBD00E6CA62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +86,14 @@
 		51E94D431CD56BBE00E6CA62 /* PetrolAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetrolAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E94D471CD56BBE00E6CA62 /* PetrolAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetrolAppUITests.m; sourceTree = "<group>"; };
 		51E94D491CD56BBE00E6CA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5284937762D1D6F8981DF1C4 /* Pods-PetrolAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrolAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetrolAppUITests/Pods-PetrolAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54D78B58D5A66288AC9C9DD7 /* Pods-PetrolAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrolAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetrolAppTests/Pods-PetrolAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		596565316628A5C450A6F9ED /* Pods-PetrolAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrolAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetrolAppTests/Pods-PetrolAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C23AEE5B28F1F5FD99F3C11 /* Pods-PetrolApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrolApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetrolApp/Pods-PetrolApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C39F4498746E9B117DF68277 /* libPods-PetrolAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PetrolAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90B817E89D209D7A0B9E940 /* Pods-PetrolAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrolAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetrolAppUITests/Pods-PetrolAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4D253F73BB41AE3E78741B8 /* libPods-PetrolAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PetrolAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A3B8AC1FC566936658A62F /* libPods-PetrolApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PetrolApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +105,7 @@
 				519C88B31D047648003FB50B /* CoreGraphics.framework in Frameworks */,
 				519C88B11D04763C003FB50B /* UIKit.framework in Frameworks */,
 				519C88AF1D047636003FB50B /* CoreLocation.framework in Frameworks */,
+				4DE95F077A4D9496FC0B9A6C /* libPods-PetrolApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309BA168690E65367D948C33 /* libPods-PetrolAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7FB94F9FD4B0E2A4081A76 /* libPods-PetrolAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +144,9 @@
 				519C88B21D047648003FB50B /* CoreGraphics.framework */,
 				519C88B01D04763C003FB50B /* UIKit.framework */,
 				519C88AE1D047636003FB50B /* CoreLocation.framework */,
+				F6A3B8AC1FC566936658A62F /* libPods-PetrolApp.a */,
+				C39F4498746E9B117DF68277 /* libPods-PetrolAppTests.a */,
+				F4D253F73BB41AE3E78741B8 /* libPods-PetrolAppUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,6 +194,7 @@
 				51E94D3B1CD56BBE00E6CA62 /* PetrolAppTests */,
 				51E94D461CD56BBE00E6CA62 /* PetrolAppUITests */,
 				51E94D201CD56BBD00E6CA62 /* Products */,
+				80888C01F70195A0AB2C99E0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +221,7 @@
 				51E94D2B1CD56BBE00E6CA62 /* Main.storyboard */,
 				51E94D301CD56BBE00E6CA62 /* LaunchScreen.storyboard */,
 				51E94D331CD56BBE00E6CA62 /* Info.plist */,
+				51D5F93F1D1A0FD400153A46 /* GoogleService-Info.plist */,
 				51E94D221CD56BBD00E6CA62 /* Supporting Files */,
 			);
 			path = PetrolApp;
@@ -231,6 +253,19 @@
 			path = PetrolAppUITests;
 			sourceTree = "<group>";
 		};
+		80888C01F70195A0AB2C99E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C23AEE5B28F1F5FD99F3C11 /* Pods-PetrolApp.debug.xcconfig */,
+				2DA2023C2ACBE4DE5450D836 /* Pods-PetrolApp.release.xcconfig */,
+				596565316628A5C450A6F9ED /* Pods-PetrolAppTests.debug.xcconfig */,
+				54D78B58D5A66288AC9C9DD7 /* Pods-PetrolAppTests.release.xcconfig */,
+				E90B817E89D209D7A0B9E940 /* Pods-PetrolAppUITests.debug.xcconfig */,
+				5284937762D1D6F8981DF1C4 /* Pods-PetrolAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51E94D4C1CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolApp" */;
 			buildPhases = (
+				6D28F3F05DA48A8E26BA016B /* [CP] Check Pods Manifest.lock */,
 				51E94D1B1CD56BBD00E6CA62 /* Sources */,
 				51E94D1C1CD56BBD00E6CA62 /* Frameworks */,
 				51E94D1D1CD56BBD00E6CA62 /* Resources */,
+				258EEF08AEBCBF1D748174E8 /* [CP] Embed Pods Frameworks */,
+				37F456BA9E48B32788151DAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,9 +293,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51E94D4F1CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolAppTests" */;
 			buildPhases = (
+				AF4CF496C310DB43E7229D25 /* [CP] Check Pods Manifest.lock */,
 				51E94D341CD56BBE00E6CA62 /* Sources */,
 				51E94D351CD56BBE00E6CA62 /* Frameworks */,
 				51E94D361CD56BBE00E6CA62 /* Resources */,
+				3FCD1F57D6DACE791EFF5AA8 /* [CP] Embed Pods Frameworks */,
+				7AF031E6CF0B8981FECB9996 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51E94D521CD56BBE00E6CA62 /* Build configuration list for PBXNativeTarget "PetrolAppUITests" */;
 			buildPhases = (
+				D62E07C8EFEEBEED2A161E41 /* [CP] Check Pods Manifest.lock */,
 				51E94D3F1CD56BBE00E6CA62 /* Sources */,
 				51E94D401CD56BBE00E6CA62 /* Frameworks */,
 				51E94D411CD56BBE00E6CA62 /* Resources */,
+				249096A2CD80378F11F09847 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51E94D321CD56BBE00E6CA62 /* LaunchScreen.storyboard in Resources */,
+				51D5F9401D1A0FD400153A46 /* GoogleService-Info.plist in Resources */,
 				518C00E51D0A6E590079B062 /* Image.xcassets in Resources */,
 				51E94D2D1CD56BBE00E6CA62 /* Main.storyboard in Resources */,
 			);
@@ -356,6 +400,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		249096A2CD80378F11F09847 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetrolAppUITests/Pods-PetrolAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		258EEF08AEBCBF1D748174E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetrolApp/Pods-PetrolApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37F456BA9E48B32788151DAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetrolApp/Pods-PetrolApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FCD1F57D6DACE791EFF5AA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetrolAppTests/Pods-PetrolAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D28F3F05DA48A8E26BA016B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF031E6CF0B8981FECB9996 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetrolAppTests/Pods-PetrolAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF4CF496C310DB43E7229D25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D62E07C8EFEEBEED2A161E41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51E94D1B1CD56BBD00E6CA62 /* Sources */ = {
@@ -510,6 +677,7 @@
 		};
 		51E94D4D1CD56BBE00E6CA62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C23AEE5B28F1F5FD99F3C11 /* Pods-PetrolApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -525,6 +693,7 @@
 		};
 		51E94D4E1CD56BBE00E6CA62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DA2023C2ACBE4DE5450D836 /* Pods-PetrolApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: James Pennington (9ZZEJK9DFN)";
@@ -540,6 +709,7 @@
 		};
 		51E94D501CD56BBE00E6CA62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596565316628A5C450A6F9ED /* Pods-PetrolAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PetrolAppTests/Info.plist;
@@ -552,6 +722,7 @@
 		};
 		51E94D511CD56BBE00E6CA62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D78B58D5A66288AC9C9DD7 /* Pods-PetrolAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PetrolAppTests/Info.plist;
@@ -564,6 +735,7 @@
 		};
 		51E94D531CD56BBE00E6CA62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E90B817E89D209D7A0B9E940 /* Pods-PetrolAppUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PetrolAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -575,6 +747,7 @@
 		};
 		51E94D541CD56BBE00E6CA62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5284937762D1D6F8981DF1C4 /* Pods-PetrolAppUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PetrolAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
