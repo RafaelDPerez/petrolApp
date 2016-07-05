@@ -11,18 +11,21 @@
 #import "Station.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "HMSegmentedControl.h"
 
-@interface StationViewController : UIViewController<MKMapViewDelegate>
+@interface StationViewController : UIViewController<MKMapViewDelegate>{
+IBOutlet UIView *segmentedControlonScreen;
+}
 @property(strong,nonatomic) IBOutlet ASStarRatingView *starsRating;
 @property(strong,nonatomic) Station *Station;
 @property(strong,nonatomic) IBOutlet UILabel *lblStationName;
 @property(strong,nonatomic) IBOutlet UISlider *sldWaitTime;
 @property(strong,nonatomic) IBOutlet UISlider *sldGasQuantity;
 @property(strong,nonatomic) IBOutlet UIButton *btnTakeMeThere;
-@property(strong,nonatomic) IBOutlet UIButton *btnEditInfo;
+@property(strong,nonatomic) IBOutlet UISwitch *swtchEditInfo;
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) HMSegmentedControl *segmentedControl4;
 
--(IBAction)editStationInfo:(id)sender;
 
 
 @end

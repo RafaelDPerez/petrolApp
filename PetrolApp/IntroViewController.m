@@ -49,7 +49,7 @@
         locationManager = [[CLLocationManager alloc] init];
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         locationManager.delegate = self;
-        [locationManager requestAlwaysAuthorization];
+        //[locationManager requestAlwaysAuthorization];
     }
     
     UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(100.0, 100.0, 25.0, 25.0)];

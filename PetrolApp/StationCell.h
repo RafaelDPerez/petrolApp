@@ -12,6 +12,8 @@
 @interface StationCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *stationName;
 @property (strong, nonatomic) IBOutlet UILabel *stationAddress;
+@property (strong, nonatomic) IBOutlet UILabel *waitTimepctg;
+@property (strong, nonatomic) IBOutlet UILabel *gasQuantitypctg;
 @property (retain, nonatomic) IBOutlet ASStarRatingView *staticStarRatingView;
 @property (strong, nonatomic) IBOutlet UIProgressView *waitTime;
 @property (strong, nonatomic) IBOutlet UIProgressView *gasQuantity;

@@ -136,6 +136,10 @@
     cell.stationAddress.text = station.Name;
     cell.gasQuantity.progress = [station.gasQuantity floatValue];
     cell.waitTime.progress = [station.waitTime floatValue];
+    
+    
+    cell.waitTimepctg.text =  [NSString stringWithFormat:@"%.f%%", [station.waitTime floatValue]*100];
+    cell.gasQuantitypctg.text = station.gasQuantity;
     cell.staticStarRatingView.canEdit = NO;
     cell.staticStarRatingView.maxRating = 5;
     cell.staticStarRatingView.rating = [station.Rating floatValue];
