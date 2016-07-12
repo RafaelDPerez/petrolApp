@@ -27,17 +27,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     FIRDatabaseReference *rootRef= [[FIRDatabase database] reference];
-    [[[rootRef child:@"stations"]childByAutoId ]
-     setValue:@{@"nombre": @"Esso Nunez de Caceres",
-                @"direccion":@"Avenida Nunez de caceres",
-                @"servicios":@{
-                        @"Gasoil":@{
-                                @"price":@"50.00",
-                                @"quantity":@"10",
-                                }},
-                @"horario":@"a veces abierto",
-                @"te gusta":@"maybe, no se",
-                }];
+//    [[[rootRef child:@"stations"]childByAutoId ]
+//     setValue:@{@"nombre": @"Esso Nunez de Caceres",
+//                @"direccion":@"Avenida Nunez de caceres",
+//                @"servicios":@{
+//                        @"Gasoil":@{
+//                                @"price":@"50.00",
+//                                @"quantity":@"10",
+//                                }},
+//                @"horario":@"a veces abierto",
+//                @"te gusta":@"maybe, no se",
+//                }];
     
 //    [[[[[rootRef child:@"station"]child:@"2" ]child:@"servicios"]child:@"Gasoil" ]
 //     updateChildValues:@{@"price": @"100",

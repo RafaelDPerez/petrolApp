@@ -25,7 +25,7 @@
     station1.Longitude = @"6.469438";
     station1.Latitude = @"3.578921";
     station1.waitTime = @"0.6";
-    station1.gasQuantity = @"0.9";
+    station1.gasQuantity = @"0.22";
     station1.Rating = @"4.5";
     
     Station *station2 = [[Station alloc]init];
@@ -131,6 +131,20 @@
     
     //    cell.stationName.text = station.Name;
     //    cell.stationAddress.text = station.Name;
+    
+    if ([station.gasQuantity floatValue] > 0 && [station.gasQuantity floatValue] < 0.25f)
+        cell.gasQuantity.progressTintColor = [UIColor redColor];
+    if ([station.gasQuantity floatValue] >= 0.25f && [station.gasQuantity floatValue] < 0.75f)
+        cell.gasQuantity.progressTintColor = [UIColor blueColor];
+    if ([station.gasQuantity floatValue] >= 0.75f)
+        cell.gasQuantity.progressTintColor = [UIColor greenColor];
+    
+    if ([station.waitTime floatValue] > 0 && [station.waitTime floatValue] < 0.25f)
+        cell.waitTime.progressTintColor = [UIColor greenColor];
+    if ([station.waitTime floatValue] >= 0.25f && [station.waitTime floatValue] < 0.75f)
+        cell.waitTime.progressTintColor = [UIColor blueColor];
+    if ([station.waitTime floatValue] >= 0.75f)
+        cell.waitTime.progressTintColor = [UIColor redColor];
     
     cell.stationName.text = station.Name;
     cell.stationAddress.text = station.Name;
