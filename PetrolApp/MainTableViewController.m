@@ -19,6 +19,20 @@
 @synthesize stationsArray;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    FIRDatabaseReference *rootRef= [[FIRDatabase database] reference];
+    
+    [[rootRef child:@"stations"] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        for ( FIRDataSnapshot *child in snapshot.children) {
+            
+            NSLog(@"child.value = %@",child.value);
+            
+        }
+
+    } withCancelBlock:^(NSError * _Nonnull error) {
+        NSLog(@"%@", error.localizedDescription);
+    }];
+    
     stationsArray = [[NSMutableArray alloc] init];
     Station *station1 = [[Station alloc]init];
     station1.Name = @"AP Filling Station";

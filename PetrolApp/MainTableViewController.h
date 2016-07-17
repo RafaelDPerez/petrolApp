@@ -11,6 +11,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "Station.h"
 #import "ASStarRatingView.h"
+@import Firebase;
+
 @interface MainTableViewController : UITableViewController
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
