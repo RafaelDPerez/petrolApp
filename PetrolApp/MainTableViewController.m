@@ -21,82 +21,93 @@
     [super viewDidLoad];
     
     FIRDatabaseReference *rootRef= [[FIRDatabase database] reference];
-    
+    stationsArray = [[NSMutableArray alloc] init];
+    Station *station = [[Station alloc]init];
     [[rootRef child:@"stations"] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         for ( FIRDataSnapshot *child in snapshot.children) {
             
-            NSLog(@"child.value = %@",child.value);
+          //  NSLog(@"child.value = %@",child.value[@"station_name"]);
+            Station *station = [[Station alloc]init];
+            station.Name = child.value[@"station_name"];
+            station.Longitude = child.value[@"station_longitude"];
+            station.Latitude = child.value[@"station_latitude"];
+            station.waitTime = child.value[@"station_wait_time"];
+            station.gasQuantity = child.value[@"station_gas_quantity"];
+            station.Rating = child.value[@"station_rating"];
+            [stationsArray addObject:station];
             
+             [self.tableView reloadData];
+               NSLog(@"hay : %lu",(unsigned long)[stationsArray count]);
         }
 
     } withCancelBlock:^(NSError * _Nonnull error) {
         NSLog(@"%@", error.localizedDescription);
     }];
+    NSLog(@"%lu",(unsigned long)[stationsArray count]);
     
-    stationsArray = [[NSMutableArray alloc] init];
-    Station *station1 = [[Station alloc]init];
-    station1.Name = @"AP Filling Station";
-    station1.Longitude = @"6.469438";
-    station1.Latitude = @"3.578921";
-    station1.waitTime = @"0.6";
-    station1.gasQuantity = @"0.22";
-    station1.Rating = @"4.5";
     
-    Station *station2 = [[Station alloc]init];
-    station2.Name = @"AP Filling Station";
-    station2.Longitude = @"6.469438";
-    station2.Latitude = @"3.578921";
-    station2.waitTime = @"1.0";
-    station2.gasQuantity = @"0.5";
-    station2.Rating = @"1";
-    
-    Station *station3 = [[Station alloc]init];
-    station3.Name = @"AP Filling Station";
-    station3.Longitude = @"6.469438";
-    station3.Latitude = @"3.578921";
-    station3.waitTime = @"0.2";
-    station3.gasQuantity = @"0.75";
-    station3.Rating = @"3";
-    
-    Station *station4 = [[Station alloc]init];
-    station4.Name = @"Mobil";
-    station4.Longitude = @"6.469438";
-    station4.Latitude = @"3.578921";
-    station4.waitTime = @"0.0";
-    station4.gasQuantity = @"1.0";
-    station4.Rating = @"5";
-    
-    Station *station5 = [[Station alloc]init];
-    station5.Name = @"AP Filling Station";
-    station5.Longitude = @"6.469438";
-    station5.Latitude = @"3.578921";
-    station5.waitTime = @"0.6";
-    station5.gasQuantity = @"0.9";
-    station5.Rating = @"0";
-    
-    Station *station6 = [[Station alloc]init];
-    station6.Name = @"Mrs Filling Station";
-    station6.Longitude = @"6.469438";
-    station6.Latitude = @"3.578921";
-    station6.waitTime = @"0.6";
-    station6.gasQuantity = @"0.9";
-    station6.Rating = @"4.5";
-    
-    Station *station7 = [[Station alloc]init];
-    station7.Name = @"AP Filling Station";
-    station7.Longitude = @"6.469438";
-    station7.Latitude = @"3.578921";
-    station7.waitTime = @"0.6";
-    station7.gasQuantity = @"0.9";
-    station7.Rating = @"1";
-    
-    [stationsArray addObject:station1];
-    [stationsArray addObject:station2];
-    [stationsArray addObject:station3];
-    [stationsArray addObject:station4];
-    [stationsArray addObject:station5];
-    [stationsArray addObject:station6];
-    [stationsArray addObject:station7];
+//    station1.Name = @"AP Filling Station";
+//    station1.Longitude = @"6.469438";
+//    station1.Latitude = @"3.578921";
+//    station1.waitTime = @"0.6";
+//    station1.gasQuantity = @"0.22";
+//    station1.Rating = @"4.5";
+//    
+//    Station *station2 = [[Station alloc]init];
+//    station2.Name = @"AP Filling Station";
+//    station2.Longitude = @"6.469438";
+//    station2.Latitude = @"3.578921";
+//    station2.waitTime = @"1.0";
+//    station2.gasQuantity = @"0.5";
+//    station2.Rating = @"1";
+//    
+//    Station *station3 = [[Station alloc]init];
+//    station3.Name = @"AP Filling Station";
+//    station3.Longitude = @"6.469438";
+//    station3.Latitude = @"3.578921";
+//    station3.waitTime = @"0.2";
+//    station3.gasQuantity = @"0.75";
+//    station3.Rating = @"3";
+//    
+//    Station *station4 = [[Station alloc]init];
+//    station4.Name = @"Mobil";
+//    station4.Longitude = @"6.469438";
+//    station4.Latitude = @"3.578921";
+//    station4.waitTime = @"0.0";
+//    station4.gasQuantity = @"1.0";
+//    station4.Rating = @"5";
+//    
+//    Station *station5 = [[Station alloc]init];
+//    station5.Name = @"AP Filling Station";
+//    station5.Longitude = @"6.469438";
+//    station5.Latitude = @"3.578921";
+//    station5.waitTime = @"0.6";
+//    station5.gasQuantity = @"0.9";
+//    station5.Rating = @"0";
+//    
+//    Station *station6 = [[Station alloc]init];
+//    station6.Name = @"Mrs Filling Station";
+//    station6.Longitude = @"6.469438";
+//    station6.Latitude = @"3.578921";
+//    station6.waitTime = @"0.6";
+//    station6.gasQuantity = @"0.9";
+//    station6.Rating = @"4.5";
+//    
+//    Station *station7 = [[Station alloc]init];
+//    station7.Name = @"AP Filling Station";
+//    station7.Longitude = @"6.469438";
+//    station7.Latitude = @"3.578921";
+//    station7.waitTime = @"0.6";
+//    station7.gasQuantity = @"0.9";
+//    station7.Rating = @"1";
+//    
+//    [stationsArray addObject:station1];
+//    [stationsArray addObject:station2];
+//    [stationsArray addObject:station3];
+//    [stationsArray addObject:station4];
+//    [stationsArray addObject:station5];
+//    [stationsArray addObject:station6];
+//    [stationsArray addObject:station7];
 
     
     // Uncomment the following line to preserve selection between presentations.
