@@ -49,7 +49,7 @@
         locationManager = [[CLLocationManager alloc] init];
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         locationManager.delegate = self;
-        //[locationManager requestAlwaysAuthorization];
+        [locationManager requestAlwaysAuthorization];
     }
     
     UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(100.0, 100.0, 25.0, 25.0)];
@@ -81,7 +81,7 @@
         
         if (error == nil && [placemarks count] > 0) {
             placemark = [placemarks lastObject];
-            NSLog(@"%@",placemark.postalCode);
+            NSLog(@"EL postal code es:%@",placemark.postalCode);
             if (placemark.postalCode == NULL) {
                txtLocation.text = placemark.country;
                 
@@ -91,7 +91,7 @@
    
             
         } else {
-            NSLog(@"%@", error.debugDescription);
+            NSLog(@"Este es el error: %@", error.debugDescription);
         }
     } ];
     
@@ -113,6 +113,7 @@
 
 
 -(IBAction)refresh:(id)sender{
+    NSLog(@"You clicked");
 [locationManager startUpdatingLocation];
     
 }

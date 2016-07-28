@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		309BA168690E65367D948C33 /* libPods-PetrolAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C39F4498746E9B117DF68277 /* libPods-PetrolAppTests.a */; };
+		45A1A6471D498D6500C3154F /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1A6461D498D6500C3154F /* LogInViewController.m */; };
+		45A1A65D1D499F1700C3154F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A65A1D499F1700C3154F /* FBSDKCoreKit.framework */; };
+		45A1A65E1D499F1700C3154F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A65B1D499F1700C3154F /* FBSDKLoginKit.framework */; };
+		45A1A65F1D499F1700C3154F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A65C1D499F1700C3154F /* FBSDKShareKit.framework */; };
+		45A1A6611D499F2B00C3154F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A6601D499F2B00C3154F /* Bolts.framework */; };
 		4DE95F077A4D9496FC0B9A6C /* libPods-PetrolApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A3B8AC1FC566936658A62F /* libPods-PetrolApp.a */; };
 		5133C02D1D2B5668003C22FF /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5133C02C1D2B5668003C22FF /* HMSegmentedControl.m */; };
 		518C00E51D0A6E590079B062 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518C00E41D0A6E590079B062 /* Image.xcassets */; };
@@ -52,6 +57,12 @@
 
 /* Begin PBXFileReference section */
 		2DA2023C2ACBE4DE5450D836 /* Pods-PetrolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrolApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetrolApp/Pods-PetrolApp.release.xcconfig"; sourceTree = "<group>"; };
+		45A1A6451D498D6500C3154F /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		45A1A6461D498D6500C3154F /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		45A1A65A1D499F1700C3154F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		45A1A65B1D499F1700C3154F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		45A1A65C1D499F1700C3154F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		45A1A6601D499F2B00C3154F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		5133C02B1D2B5668003C22FF /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMSegmentedControl.h; path = HMSegmentedControl/HMSegmentedControl.h; sourceTree = "<group>"; };
 		5133C02C1D2B5668003C22FF /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMSegmentedControl.m; path = HMSegmentedControl/HMSegmentedControl.m; sourceTree = "<group>"; };
 		518C00E41D0A6E590079B062 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
@@ -104,9 +115,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A1A65F1D499F1700C3154F /* FBSDKShareKit.framework in Frameworks */,
 				519C88B51D04764E003FB50B /* Foundation.framework in Frameworks */,
+				45A1A65D1D499F1700C3154F /* FBSDKCoreKit.framework in Frameworks */,
 				519C88B31D047648003FB50B /* CoreGraphics.framework in Frameworks */,
 				519C88B11D04763C003FB50B /* UIKit.framework in Frameworks */,
+				45A1A65E1D499F1700C3154F /* FBSDKLoginKit.framework in Frameworks */,
+				45A1A6611D499F2B00C3154F /* Bolts.framework in Frameworks */,
 				519C88AF1D047636003FB50B /* CoreLocation.framework in Frameworks */,
 				4DE95F077A4D9496FC0B9A6C /* libPods-PetrolApp.a in Frameworks */,
 			);
@@ -152,6 +167,10 @@
 		519C88AD1D047625003FB50B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45A1A6601D499F2B00C3154F /* Bolts.framework */,
+				45A1A65A1D499F1700C3154F /* FBSDKCoreKit.framework */,
+				45A1A65B1D499F1700C3154F /* FBSDKLoginKit.framework */,
+				45A1A65C1D499F1700C3154F /* FBSDKShareKit.framework */,
 				519C88B41D04764E003FB50B /* Foundation.framework */,
 				519C88B21D047648003FB50B /* CoreGraphics.framework */,
 				519C88B01D04763C003FB50B /* UIKit.framework */,
@@ -176,6 +195,8 @@
 				519B984C1D07926300DE4DD9 /* StationViewController.m */,
 				51AB69FA1D0915F7004262B1 /* TabBarViewController.h */,
 				51AB69FB1D0915F7004262B1 /* TabBarViewController.m */,
+				45A1A6451D498D6500C3154F /* LogInViewController.h */,
+				45A1A6461D498D6500C3154F /* LogInViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -550,6 +571,7 @@
 				51A7AE6C1CD58726008C99AA /* StationCell.m in Sources */,
 				51AB69FC1D0915F7004262B1 /* TabBarViewController.m in Sources */,
 				5133C02D1D2B5668003C22FF /* HMSegmentedControl.m in Sources */,
+				45A1A6471D498D6500C3154F /* LogInViewController.m in Sources */,
 				519B984D1D07926300DE4DD9 /* StationViewController.m in Sources */,
 				51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */,
 				519B98461D0785FA00DE4DD9 /* ASStarRatingView.m in Sources */,
@@ -696,6 +718,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PetrolApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -712,6 +738,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: James Pennington (9ZZEJK9DFN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Pennington (9ZZEJK9DFN)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PetrolApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
