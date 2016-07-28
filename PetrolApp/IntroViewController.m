@@ -27,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     FIRDatabaseReference *rootRef= [[FIRDatabase database] reference];
+    
 //    [[[rootRef child:@"stations"]childByAutoId ]
 //     setValue:@{@"nombre": @"Esso Nunez de Caceres",
 //                @"direccion":@"Avenida Nunez de caceres",

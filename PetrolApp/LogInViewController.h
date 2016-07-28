@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import Firebase;
+@import FirebaseAuth;
 
 @interface LogInViewController : UIViewController
 
