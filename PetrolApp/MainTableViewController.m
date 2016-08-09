@@ -22,7 +22,6 @@
     
     FIRDatabaseReference *rootRef= [[FIRDatabase database] reference];
     stationsArray = [[NSMutableArray alloc] init];
-    Station *station = [[Station alloc]init];
     [[rootRef child:@"stations"] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         for ( FIRDataSnapshot *child in snapshot.children) {
             

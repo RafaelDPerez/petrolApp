@@ -13,8 +13,8 @@
 		45A1A65E1D499F1700C3154F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A65B1D499F1700C3154F /* FBSDKLoginKit.framework */; };
 		45A1A65F1D499F1700C3154F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A65C1D499F1700C3154F /* FBSDKShareKit.framework */; };
 		45A1A6611D499F2B00C3154F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A6601D499F2B00C3154F /* Bolts.framework */; };
+		45DD31901D5A24C10054F7D0 /* PriceContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DD318F1D5A24C10054F7D0 /* PriceContentViewController.m */; };
 		4DE95F077A4D9496FC0B9A6C /* libPods-PetrolApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A3B8AC1FC566936658A62F /* libPods-PetrolApp.a */; };
-		5133C02D1D2B5668003C22FF /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5133C02C1D2B5668003C22FF /* HMSegmentedControl.m */; };
 		518C00E51D0A6E590079B062 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518C00E41D0A6E590079B062 /* Image.xcassets */; };
 		519B98461D0785FA00DE4DD9 /* ASStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */; };
 		519B984D1D07926300DE4DD9 /* StationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B984C1D07926300DE4DD9 /* StationViewController.m */; };
@@ -63,8 +63,8 @@
 		45A1A65B1D499F1700C3154F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		45A1A65C1D499F1700C3154F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		45A1A6601D499F2B00C3154F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		5133C02B1D2B5668003C22FF /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMSegmentedControl.h; path = HMSegmentedControl/HMSegmentedControl.h; sourceTree = "<group>"; };
-		5133C02C1D2B5668003C22FF /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMSegmentedControl.m; path = HMSegmentedControl/HMSegmentedControl.m; sourceTree = "<group>"; };
+		45DD318E1D5A24C10054F7D0 /* PriceContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceContentViewController.h; sourceTree = "<group>"; };
+		45DD318F1D5A24C10054F7D0 /* PriceContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceContentViewController.m; sourceTree = "<group>"; };
 		518C00E41D0A6E590079B062 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		519B98431D0785FA00DE4DD9 /* ASStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStarRatingView.h; sourceTree = "<group>"; };
 		519B98441D0785FA00DE4DD9 /* ASStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStarRatingView.m; sourceTree = "<group>"; };
@@ -146,15 +146,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5133C02A1D2B565A003C22FF /* HMSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				5133C02B1D2B5668003C22FF /* HMSegmentedControl.h */,
-				5133C02C1D2B5668003C22FF /* HMSegmentedControl.m */,
-			);
-			name = HMSegmentedControl;
-			sourceTree = "<group>";
-		};
 		519B98421D0785E000DE4DD9 /* ASStarRatingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +188,8 @@
 				51AB69FB1D0915F7004262B1 /* TabBarViewController.m */,
 				45A1A6451D498D6500C3154F /* LogInViewController.h */,
 				45A1A6461D498D6500C3154F /* LogInViewController.m */,
+				45DD318E1D5A24C10054F7D0 /* PriceContentViewController.h */,
+				45DD318F1D5A24C10054F7D0 /* PriceContentViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -222,7 +215,6 @@
 		51E94D161CD56BBD00E6CA62 = {
 			isa = PBXGroup;
 			children = (
-				5133C02A1D2B565A003C22FF /* HMSegmentedControl */,
 				519C88AD1D047625003FB50B /* Frameworks */,
 				51E94D211CD56BBD00E6CA62 /* PetrolApp */,
 				51E94D3B1CD56BBE00E6CA62 /* PetrolAppTests */,
@@ -570,11 +562,11 @@
 				51E94D241CD56BBD00E6CA62 /* main.m in Sources */,
 				51A7AE6C1CD58726008C99AA /* StationCell.m in Sources */,
 				51AB69FC1D0915F7004262B1 /* TabBarViewController.m in Sources */,
-				5133C02D1D2B5668003C22FF /* HMSegmentedControl.m in Sources */,
 				45A1A6471D498D6500C3154F /* LogInViewController.m in Sources */,
 				519B984D1D07926300DE4DD9 /* StationViewController.m in Sources */,
 				51C467681CF50ABF0072A9D4 /* IntroViewController.m in Sources */,
 				519B98461D0785FA00DE4DD9 /* ASStarRatingView.m in Sources */,
+				45DD31901D5A24C10054F7D0 /* PriceContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,7 +708,7 @@
 			baseConfigurationReference = 8C23AEE5B28F1F5FD99F3C11 /* Pods-PetrolApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -736,7 +728,7 @@
 			baseConfigurationReference = 2DA2023C2ACBE4DE5450D836 /* Pods-PetrolApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: James Pennington (9ZZEJK9DFN)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Pennington (9ZZEJK9DFN)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

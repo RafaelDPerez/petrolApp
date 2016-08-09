@@ -42,7 +42,10 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                                          .tokenString];
         [[FIRAuth auth] signInWithCredential:credential
                                   completion:^(FIRUser *user, NSError *error) {
-                                      // ...
+                                      
+                                      
+                                      
+                                      
                                   }];
     } else {
         NSLog(error.localizedDescription);

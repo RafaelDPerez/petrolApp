@@ -7,6 +7,7 @@
 //
 
 #import "StationViewController.h"
+#import "PriceContentViewController.h"
 
 @interface StationViewController ()
 
@@ -16,24 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    // Do any additional setup after loading the view.
-    CGFloat yDelta;
-    
-    if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending) {
-        yDelta = 20.0f;
-    } else {
-        yDelta = 0.0f;
-    }
-    HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"Feedback", @"Gas"]];
-    segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
-    
-    //(NPI,NPI,WIDTH,HEIGHT)
-    [segmentedControl setFrame:CGRectMake(0, 0 + yDelta, 320, 40)];
-    [segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
-    segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
-    // [self.view addSubview:segmentedControl];
-    [segmentedControlonScreen addSubview:segmentedControl];
+
     [_swtchEditInfo addTarget:self action:@selector(setState:) forControlEvents:UIControlEventValueChanged];
     self.title = self.Station.Name;
     _starsRating.userInteractionEnabled = NO;
@@ -67,34 +51,29 @@
     [self.mapView setRegion:region animated:YES];
 }
 
-- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
-    
-    
-    if(segmentedControl.selectedSegmentIndex == 1)
-    {
-      
-    }
-    
-    else if(segmentedControl.selectedSegmentIndex == 0)
-    {
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString * segueName = segue.identifier;
+    if ([segueName isEqualToString: @"PriceSegue"]) {
+        PriceContentViewController * childViewController = (PriceContentViewController *) [segue destinationViewController];
+        childViewController.Station = self.Station;
         
-    
-        
+        // do something with the AlertView's subviews here...
     }
-    
-    else if(segmentedControl.selectedSegmentIndex == 2)
-    {
-        
-    }
-    
-    
-    
 }
 
-- (void)uisegmentedControlChangedValue:(UISegmentedControl *)segmentedControl {
-    //NSLog(@"Selected index %i", segmentedControl.selectedSegmentIndex);
-}
-
+-(IBAction)ShowComponent:(UISegmentedControl *)sender {
+    if (sender.selectedSegmentIndex == 0) {
+        [UIView animateWithDuration:(0.5) animations:^{
+            self.priceContainer.alpha = 0;
+            
+        }];
+    } else {
+        [UIView animateWithDuration:(0.5) animations:^{
+            self.priceContainer.alpha = 1;
+         
+        }];
+    }}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

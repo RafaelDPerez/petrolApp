@@ -11,7 +11,7 @@
 #import "Station.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "HMSegmentedControl.h"
+
 
 @interface StationViewController : UIViewController<MKMapViewDelegate>{
 IBOutlet UIView *segmentedControlonScreen;
@@ -24,7 +24,8 @@ IBOutlet UIView *segmentedControlonScreen;
 @property(strong,nonatomic) IBOutlet UIButton *btnTakeMeThere;
 @property(strong,nonatomic) IBOutlet UISwitch *swtchEditInfo;
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
-@property (nonatomic, strong) HMSegmentedControl *segmentedControl4;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *sgmStationData;
+@property (weak, nonatomic) IBOutlet UIView *priceContainer;
 
 
 
