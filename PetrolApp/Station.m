@@ -20,6 +20,8 @@
         self.Latitude = [Dict objectForKey:@"longitude"];
     if([Dict objectForKey:@"latitude"] != [NSNull null])
         self.Longitude = [Dict objectForKey:@"latitude"];
+    if([Dict objectForKey:@"latitude"] != [NSNull null])
+        self.Longitude = [Dict objectForKey:@"latitude"];
     
     
     

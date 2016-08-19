@@ -17,6 +17,8 @@
 @property (strong,nonatomic) NSString *gasQuantity;
 @property (strong,nonatomic) NSString *Distance;
 @property (strong,nonatomic) NSString *Rating;
+@property (strong,nonatomic) NSString *Logo;
+
 
 
 

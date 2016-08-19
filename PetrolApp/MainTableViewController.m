@@ -11,6 +11,7 @@
 #import "StationCell.h"
 #import "StationViewController.h"
 
+
 @interface MainTableViewController ()
 
 @end
@@ -33,6 +34,7 @@
             station.waitTime = child.value[@"station_wait_time"];
             station.gasQuantity = child.value[@"station_gas_quantity"];
             station.Rating = child.value[@"station_rating"];
+            station.Logo = child.value[@"station_logo"];
             [stationsArray addObject:station];
             
              [self.tableView reloadData];
@@ -174,8 +176,17 @@
     cell.stationAddress.text = station.Name;
     cell.gasQuantity.progress = [station.gasQuantity floatValue];
     cell.waitTime.progress = [station.waitTime floatValue];
-    
-    
+//    NSURL *imageURL = [NSURL URLWithString:station.Logo];
+//    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+//        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+//        
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            // Update the UI
+//            cell.stationLogo.image = [UIImage imageWithData:imageData];
+//        });
+//    });
+
     cell.waitTimepctg.text =  [NSString stringWithFormat:@"%.f%%", [station.waitTime floatValue]*100];
     cell.gasQuantitypctg.text = station.gasQuantity;
     cell.staticStarRatingView.canEdit = NO;
