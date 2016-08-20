@@ -36,8 +36,8 @@
     CLLocationCoordinate2D location;
     
     MKPointAnnotation *point1 = [[MKPointAnnotation alloc] init];
-    NSString *lat = self.Station.Longitude;
-    NSString *longitude = self.Station.Latitude;
+    NSString *lat = self.Station.Latitude;
+    NSString *longitude = self.Station.Longitude;
     location.latitude = lat.doubleValue;
     location.longitude = longitude.doubleValue;
     point1.coordinate = CLLocationCoordinate2DMake(lat.doubleValue, longitude.doubleValue);
@@ -47,7 +47,7 @@
     //CLLocationCoordinate2D NigCoord = CLLocationCoordinate2DMake(10.438520, 8.876953);
    // CLLocationCoordinate2D LagosCoord = CLLocationCoordinate2DMake(6.524379, 3.379206);
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location, 11000, 11000);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location, 8000, 8000);
     [self.mapView setRegion:region animated:YES];
 }
 
@@ -120,6 +120,21 @@
     
     NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
     [mapItem openInMapsWithLaunchOptions:launchOptions];
+}
+
+-(IBAction)takeMeThere:(id)sender{
+   CLLocationCoordinate2D location;
+    
+
+    MKPlacemark *placemark = [[MKPlacemark alloc]
+                              initWithCoordinate:location
+                              addressDictionary:nil];
+    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+    mapItem.name = _Station.Name;
+    
+    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+    [mapItem openInMapsWithLaunchOptions:launchOptions];
+
 }
 
 /*

@@ -173,7 +173,16 @@
           //  [self presentViewController:alert animated:YES completion:nil];
            [self performSegueWithIdentifier:@"callStations" sender:nil];
         }
-       
+        if(_sgmGasType.selectedSegmentIndex == 4){
+            UIAlertController * alert=   [UIAlertController
+                                          alertControllerWithTitle:@"Test"
+                                          message:@"Kerosene"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ok];
+            //  [self presentViewController:alert animated:YES completion:nil];
+            [self performSegueWithIdentifier:@"callStations" sender:nil];
+        }
    
     }
     

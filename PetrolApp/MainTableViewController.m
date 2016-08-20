@@ -166,11 +166,11 @@
         cell.gasQuantity.progressTintColor = [UIColor greenColor];
     
     if ([station.waitTime floatValue] > 0 && [station.waitTime floatValue] < 0.25f)
-        cell.waitTime.progressTintColor = [UIColor greenColor];
+        cell.waitTime.progressTintColor = [UIColor redColor];
     if ([station.waitTime floatValue] >= 0.25f && [station.waitTime floatValue] < 0.75f)
         cell.waitTime.progressTintColor = [UIColor blueColor];
     if ([station.waitTime floatValue] >= 0.75f)
-        cell.waitTime.progressTintColor = [UIColor redColor];
+        cell.waitTime.progressTintColor = [UIColor greenColor];
     
     cell.stationName.text = station.Name;
     cell.stationAddress.text = station.Name;
