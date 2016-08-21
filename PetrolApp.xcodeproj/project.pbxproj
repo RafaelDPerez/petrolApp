@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		309BA168690E65367D948C33 /* libPods-PetrolAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C39F4498746E9B117DF68277 /* libPods-PetrolAppTests.a */; };
+		4509FB931D6A124800F83F92 /* SDWebImage in Resources */ = {isa = PBXBuildFile; fileRef = 4509FB921D6A124800F83F92 /* SDWebImage */; };
 		45A1A6471D498D6500C3154F /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A1A6461D498D6500C3154F /* LogInViewController.m */; };
 		45A1A65D1D499F1700C3154F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A65A1D499F1700C3154F /* FBSDKCoreKit.framework */; };
 		45A1A65E1D499F1700C3154F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1A65B1D499F1700C3154F /* FBSDKLoginKit.framework */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		2DA2023C2ACBE4DE5450D836 /* Pods-PetrolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetrolApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetrolApp/Pods-PetrolApp.release.xcconfig"; sourceTree = "<group>"; };
+		4509FB921D6A124800F83F92 /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDWebImage; sourceTree = "<group>"; };
 		45A1A6451D498D6500C3154F /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		45A1A6461D498D6500C3154F /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		45A1A65A1D499F1700C3154F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		51E94D211CD56BBD00E6CA62 /* PetrolApp */ = {
 			isa = PBXGroup;
 			children = (
+				4509FB921D6A124800F83F92 /* SDWebImage */,
 				518C00E41D0A6E590079B062 /* Image.xcassets */,
 				519B98421D0785E000DE4DD9 /* ASStarRatingView */,
 				51A7AE691CD5869E008C99AA /* Cells */,
@@ -408,6 +411,7 @@
 				51D5F9401D1A0FD400153A46 /* GoogleService-Info.plist in Resources */,
 				518C00E51D0A6E590079B062 /* Image.xcassets in Resources */,
 				51E94D2D1CD56BBE00E6CA62 /* Main.storyboard in Resources */,
+				4509FB931D6A124800F83F92 /* SDWebImage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

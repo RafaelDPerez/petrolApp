@@ -10,7 +10,7 @@
 #import "Station.h"
 #import "StationCell.h"
 #import "StationViewController.h"
-
+#import "SDWebImage/UIImageView+WebCache.h"
 
 @interface MainTableViewController ()
 
@@ -192,6 +192,8 @@
     cell.staticStarRatingView.canEdit = NO;
     cell.staticStarRatingView.maxRating = 5;
     cell.staticStarRatingView.rating = [station.Rating floatValue];
+    [cell.stationLogo sd_setImageWithURL:[NSURL URLWithString:station.Logo]
+placeholderImage:[UIImage imageNamed:@"Garage-50"]];
     
     return cell;
 
